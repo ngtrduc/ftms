@@ -1,0 +1,25 @@
+<div>
+  <div class="row">
+    <div class="col-md-12 title">
+      <%= t "layouts.locations" %>
+      <span>
+        <%= link_to t("locations.buttons.admin.new"),
+          "#", class: "btn btn-success pull-right" %>
+      </span>
+    </div>
+  </div>
+  <table class="table table-bordered display">
+    <thead>
+      <tr class="active">
+        <th></th>
+        <th><%= t "locations.table.name" %></th>
+        <th><%= t "locations.table.manager" %></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= render @locations %>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,9 @@
+<tr>
+  <td></td>
+  <td><%= location.name %></td>
+  <td><%= link_to avatar_user_tag(location.manager, "profile-user",
+    Settings.image_size_20), admin_user_path(location.manager),
+    title: location.name if location.manager %></td>
+  <td></td>
+  <td></td>
+</tr>
